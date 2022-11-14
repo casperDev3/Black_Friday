@@ -1,4 +1,64 @@
 .header{
-    background-color: red;
-    color: #fff;
+    padding: 14px 0;
+    max-width: 100%;
+    max-height: 80px;
+    margin-bottom: 30px;
+    &__burger{
+        min-height: 30px;
+        min-width: 30px;
+        position: relative;
+        span{
+            display: block;
+            max-height: 4px;
+            min-height: 4px;
+            background-color: #fff;
+            min-width: 28px;
+        }
+        :first-child{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        :last-child{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        :nth-child(2){
+            position: absolute;
+            top: calc(50% - 2px);
+            left: 0;
+        }
+       
+    }
+    &__nav{
+        margin: 0;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #fff;
+                margin: 12px;
+            }
+        }
+    }
+    &__logo{
+        max-height: 70px;
+        min-height: 70px;
+        @media screen and (max-width: 640px) {
+            max-height: 40px;
+            min-height: 40px;
+        }
+    }
+    &__networks{
+
+        div{
+            min-height: 26px;
+            min-width: 26px;
+            max-height: 26px;
+            max-width: 26px;
+            margin: 12px;
+            background-color: #f9b742;
+        }
+    }
 }
