@@ -9,6 +9,10 @@
         img {
             display: block;
             margin-bottom: 14px;
+            @media screen and (max-width: 1000px) {
+                max-width: 100%;
+                
+            }
         }
         p {
             margin: 0;
